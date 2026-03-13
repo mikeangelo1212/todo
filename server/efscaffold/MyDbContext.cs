@@ -23,6 +23,7 @@ public partial class MyDbContext : DbContext
             entity.ToTable("todo", "todosystem");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Isdone).HasColumnName("isdone");
             entity.Property(e => e.Priority).HasColumnName("priority");
             entity.Property(e => e.Title).HasColumnName("title");
         });

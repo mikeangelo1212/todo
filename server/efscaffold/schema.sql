@@ -4,5 +4,7 @@ create schema if not exists todosystem;
 create table todosystem.todo(
 	id text not null primary key,
 	title text not null,
-	priority numeric not null
+	priority numeric not null,
+    isdone boolean not null
 ); 
+-- este nomas esta aca como representacion
