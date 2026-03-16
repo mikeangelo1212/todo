@@ -8,6 +8,13 @@ function App() {
 
   return (
     <>
+      <button onClick={()=>{
+        fetch('http://localhost:5145/').then(response=>{
+          console.log(response)
+        }).catch(e=>{
+          console.log(e)
+        })
+      }}>hola baboso</button>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
